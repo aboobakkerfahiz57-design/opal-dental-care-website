@@ -1,160 +1,1409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f7fbff" />
-  <meta name="description" content="Opal Dental Care — multi-speciality dental clinic in Surathkal, Mangaluru. Book an appointment for implants, braces, root canals, cosmetic dentistry and more." />
-  <title>Opal Dental Care | A Healthier Smile Starts Here</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--blue:#1265b7;--blue2:#0a4387;--green:#43a843;--ink:#122238;--muted:#64748b;--line:#e5edf5;--pale:#f3f8fc;--white:#fff;--shadow:0 22px 70px rgba(19,55,91,.11);--radius:24px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}h1,h2,h3,h4{font-family:Manrope,sans-serif;letter-spacing:-.04em;margin:0}p{line-height:1.7;color:var(--muted)}a{text-decoration:none;color:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:2px;background:var(--green)}.section{padding:100px 0}.section-head{max-width:690px;margin-bottom:42px}.section-head h2{font-size:clamp(2rem,4vw,3.35rem);line-height:1.12;margin:14px 0}.section-head p{max-width:600px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:999px;background:var(--blue);color:white;font-weight:800;border:1px solid var(--blue);transition:.25s;cursor:pointer}.btn:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 12px 28px #1265b733}.btn.outline{background:transparent;color:var(--blue)}.btn.outline:hover{background:#eaf4ff}.topbar{background:#0c3159;color:#dcecff;font-size:.82rem;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.topbar a{color:white;font-weight:700}.nav-wrap{position:sticky;top:0;z-index:50;background:#ffffffed;backdrop-filter:blur(14px);border-bottom:1px solid #e9eff5}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-family:Manrope,sans-serif;font-weight:900;font-size:1.4rem;color:var(--blue);line-height:1}.brand-mark{width:43px;height:43px;border:3px solid var(--blue);border-radius:15px 15px 15px 4px;display:grid;place-items:center;color:var(--green);font-size:1.55rem;transform:rotate(-5deg)}.brand small{display:block;font:700 .62rem "DM Sans";letter-spacing:.15em;color:var(--green);margin-top:4px}.nav-links{display:flex;align-items:center;gap:27px;font-size:.9rem;font-weight:700;color:#34465c}.nav-links a:hover{color:var(--blue)}.menu-btn{display:none;border:0;background:#eef6ff;border-radius:12px;padding:10px;font-size:1.2rem}
-    .hero{position:relative;padding:76px 0 80px;background:radial-gradient(circle at 82% 25%,#e1f4eb 0,transparent 27%),radial-gradient(circle at 10% 15%,#e8f3ff 0,transparent 34%),linear-gradient(135deg,#f8fbff,#fff 65%);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px}.hero h1{font-size:clamp(2.8rem,5.6vw,5.25rem);line-height:1.02;margin:19px 0 22px}.hero h1 span{color:var(--blue)}.hero-copy>p{font-size:1.08rem;max-width:550px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.trust-row{display:flex;gap:24px;flex-wrap:wrap;margin-top:32px}.trust-item strong{display:block;font:800 1.45rem Manrope;color:var(--ink)}.trust-item span{font-size:.78rem;color:var(--muted)}.hero-visual{position:relative;min-height:480px;border-radius:38px;background:linear-gradient(145deg,#dff0ff,#f4fbff 54%,#e4f6e9);display:grid;place-items:center;overflow:hidden;box-shadow:var(--shadow)}.hero-visual:before,.hero-visual:after{content:"";position:absolute;border:1px solid #ffffffb5;border-radius:50%;width:390px;height:390px}.hero-visual:after{width:500px;height:500px}.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.2;mix-blend-mode:multiply}.hero-tooth{position:relative;z-index:2;width:min(62%,310px);filter:drop-shadow(0 28px 24px #174d7833);animation:toothFloat 5s ease-in-out infinite}.float-card{position:absolute;z-index:3;background:#fff;padding:14px 17px;border-radius:17px;box-shadow:0 12px 34px #174d7820;font-weight:800;font-size:.85rem}.float-card small{display:block;color:var(--muted);font-weight:500;margin-top:4px}.float-card.one{left:22px;top:55px}.float-card.two{right:18px;bottom:55px}.pulse{display:inline-block;width:9px;height:9px;background:var(--green);border-radius:50%;margin-right:7px;box-shadow:0 0 0 5px #43a84322}@keyframes toothFloat{0%,100%{transform:translateY(-8px) rotate(-3deg)}50%{transform:translateY(10px) rotate(3deg)}}
-    .feature-strip{margin-top:-1px;background:#0d3762;color:white;padding:23px 0}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.feature{display:flex;align-items:center;gap:12px}.feature-icon{width:42px;height:42px;flex:0 0 42px;border-radius:14px;background:#ffffff18;display:grid;place-items:center;font-size:1.25rem}.feature strong{display:block;font-size:.9rem}.feature small{color:#bdd5ed;font-size:.76rem}
-    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.about-image{position:relative;min-height:430px;border-radius:30px;overflow:hidden;background:#eaf4fb}.about-image img{width:100%;height:100%;min-height:430px;object-fit:cover}.about-badge{position:absolute;bottom:22px;left:22px;background:#fff;padding:18px 22px;border-radius:18px;box-shadow:var(--shadow)}.about-badge strong{font:800 1.5rem Manrope;color:var(--blue);display:block}.check-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}.check{display:flex;gap:10px;font-weight:700;font-size:.92rem}.check i{font-style:normal;color:var(--green)}
-    .services{background:var(--pale)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{background:white;border:1px solid var(--line);border-radius:22px;padding:25px;transition:.25s;min-height:210px}.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#c9e0f5}.service-icon{width:52px;height:52px;border-radius:16px;background:#eaf4ff;display:grid;place-items:center;font-size:1.55rem;margin-bottom:19px}.service-card h3{font-size:1.12rem;margin-bottom:8px}.service-card p{font-size:.9rem;margin:0}
-    .implant{background:#0b2e53;color:white;overflow:hidden}.implant .section-head h2,.implant .section-head p{color:white}.implant .section-head p{color:#c1d3e5}.implant-stage{position:relative;min-height:440px;border-radius:30px;background:radial-gradient(circle at 50% 30%,#1a578b,#0b2b4d 70%);overflow:hidden;display:grid;place-items:center}.implant-caption{position:absolute;top:28px;left:32px;z-index:5;color:#d6eaff}.implant-caption strong{display:block;font:800 1.2rem Manrope;color:white}.jaw{position:absolute;bottom:60px;width:min(720px,85%);height:145px;background:linear-gradient(180deg,#f4a7a4,#c66c78);border-radius:50% 50% 25% 25%/48% 48% 25% 25%;box-shadow:inset 0 15px 25px #8f344b55,0 25px 35px #0004;transform:perspective(500px) rotateX(8deg)}.gum-teeth{position:absolute;bottom:166px;display:flex;gap:8px;z-index:2;transform:perspective(500px) rotateX(12deg)}.gum-tooth{width:52px;height:78px;background:linear-gradient(100deg,#fff,#d9e5ed 60%,#fff);border-radius:13px 13px 18px 18px;box-shadow:inset -6px -5px 8px #8da4b355,0 8px 10px #0003;position:relative}.gum-tooth:after{content:"";position:absolute;width:22px;height:39px;left:15px;top:56px;background:linear-gradient(90deg,#f4e7d9,#fff);clip-path:polygon(0 0,100% 0,80% 100%,55% 75%,30% 100%)}.missing-slot{width:52px;height:70px;border:2px dashed #f5c4b8;border-radius:12px 12px 25px 25px;background:#642d48aa;margin-top:8px}.implant-tooth{position:absolute;z-index:4;width:76px;height:128px;top:48px;left:calc(50% - 38px);filter:drop-shadow(0 15px 12px #0005);transform-origin:50% 85%;will-change:transform}.implant-tooth svg{width:100%;height:100%}.implant-note{position:absolute;right:28px;bottom:25px;max-width:230px;color:#d2e5f8;font-size:.84rem;text-align:right}.scroll-hint{position:absolute;bottom:18px;left:28px;font-size:.75rem;color:#b8d2ec;letter-spacing:.1em;text-transform:uppercase}
-    .doctors{background:#fff}.doctor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.doctor-card{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:white;transition:.25s}.doctor-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.doctor-art{height:190px;background:linear-gradient(135deg,#eaf4ff,#e5f5eb);display:grid;place-items:center;position:relative;overflow:hidden}.doctor-art:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:#ffffffa8;top:18px}.doctor-avatar{position:relative;z-index:1;width:108px;height:108px;border-radius:50%;background:linear-gradient(145deg,#1265b7,#43a843);display:grid;place-items:center;color:#fff;font:800 2rem Manrope;border:7px solid #ffffffc9;box-shadow:0 12px 25px #174d7824}.doctor-body{padding:19px}.doctor-body h3{font-size:1.05rem;margin-bottom:7px}.doctor-body p{font-size:.82rem;margin:0 0 13px}.doctor-tag{display:inline-block;padding:6px 9px;border-radius:30px;background:#eff7ff;color:var(--blue);font-size:.7rem;font-weight:800}.doctor-footnote{font-size:.8rem;color:#718096;margin-top:20px}
-    .reviews{background:var(--pale)}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{background:white;border:1px solid var(--line);padding:25px;border-radius:22px}.stars{color:#f5a623;letter-spacing:3px}.review p{font-size:.92rem}.review strong{font-size:.9rem}.rating-panel{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:20px;margin-top:25px;width:max-content;max-width:100%}.rating-panel b{font:800 2.1rem Manrope;color:var(--blue)}.rating-panel span{font-size:.82rem;color:var(--muted)}
-    .booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:42px;align-items:start}.contact-card{background:#0c3159;color:white;padding:32px;border-radius:26px}.contact-card h3{font-size:1.6rem}.contact-card p{color:#c5d8eb}.contact-line{padding:16px 0;border-bottom:1px solid #ffffff22}.contact-line small{display:block;color:#9fc2e4;margin-bottom:5px}.contact-line strong{font-size:.98rem}.booking-form{padding:30px;border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.82rem;font-weight:800}.field input,.field select,.field textarea{width:100%;padding:14px 15px;border:1px solid #dce6ef;border-radius:12px;font:inherit;outline:none;background:#fbfdff}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1265b718}.field textarea{min-height:100px;resize:vertical}.form-help{font-size:.75rem;color:var(--muted);margin:12px 0 0}
-    .map-box{height:260px;border-radius:22px;overflow:hidden;background:#eaf3f9;margin-top:25px}.map-box iframe{width:100%;height:100%;border:0}.footer{background:#081f38;color:#d5e5f5;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:35px}.footer p{color:#9eb5ca;font-size:.88rem}.footer h4{color:#fff;margin-bottom:15px}.footer a{display:block;color:#b9cde0;margin:10px 0;font-size:.88rem}.footer a:hover{color:white}.copyright{border-top:1px solid #ffffff1b;margin-top:35px;padding-top:20px;color:#8ea7bf;font-size:.78rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;background:#20bd67;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.55rem;box-shadow:0 12px 28px #0b784344}.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
-    @media(max-width:900px){.hero-grid,.about-grid,.booking-grid{grid-template-columns:1fr}.hero-visual{min-height:400px}.service-grid{grid-template-columns:repeat(2,1fr)}.doctor-grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:#fff;padding:20px 25px 25px;box-shadow:0 15px 25px #102f5018;flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-btn{display:block}.review-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:600px){.container{width:min(100% - 30px,1160px)}.section{padding:72px 0}.topbar .container{justify-content:center;text-align:center}.topbar .hide-mobile{display:none}.nav{height:72px}.nav-links{top:72px}.brand{font-size:1.2rem}.hero{padding:55px 0}.hero-visual{min-height:330px;border-radius:25px}.float-card{font-size:.72rem;padding:10px 12px}.float-card.one{top:20px;left:12px}.float-card.two{bottom:20px;right:10px}.feature-grid{grid-template-columns:1fr 1fr;gap:18px 10px}.feature{align-items:flex-start}.feature strong{font-size:.78rem}.feature small{font-size:.68rem}.service-grid,.doctor-grid,.review-grid{grid-template-columns:1fr}.doctor-art{height:170px}.check-list{grid-template-columns:1fr}.implant-stage{min-height:380px}.gum-tooth{width:34px;height:62px}.missing-slot{width:34px;height:55px}.gum-teeth{gap:5px;bottom:155px}.jaw{height:115px;bottom:55px}.implant-note{right:14px;bottom:13px;font-size:.72rem;max-width:155px}.scroll-hint{left:14px;bottom:15px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-form{padding:20px}.footer-grid{grid-template-columns:1fr}.rating-panel{width:100%}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071b30">
+<meta name="description" content="Opal Dental Care — Multi-speciality dental clinic, Surathkal, Mangaluru.">
+<title>OPAL Dental Care | Beyond Ordinary Dentistry</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --blue:#1265b7;--deep:#06182a;--deep2:#0b2d4b;
+ --green:#48b66a;--mint:#9be6b2;--white:#fff;
+ --text:#142b43;--muted:#71849a;--pale:#f1f7fc;
+ --line:#dfeaf2;--gold:#d9b76c;
+ --shadow:0 25px 80px #06182a18;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"DM Sans",sans-serif;color:var(--text);overflow-x:hidden;background:#fff}
+body.locked{overflow:hidden}
+h1,h2,h3,h4{font-family:Manrope,sans-serif}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.container{width:min(1200px,calc(100% - 42px));margin:auto}
+.section{padding:105px 0}
+.section-title{font-size:clamp(2.2rem,5vw,4.1rem);line-height:1.08;letter-spacing:-2px;margin:16px 0}
+.section-text{color:var(--muted);line-height:1.85;max-width:680px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--blue)}
+.eyebrow:before{content:"";display:inline-block;width:25px;height:2px;background:var(--green);margin-right:10px;vertical-align:middle}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 23px;border:1px solid var(--blue);border-radius:50px;background:var(--blue);color:#fff;font-weight:800;transition:.3s}
+.btn:hover{background:#08457f;transform:translateY(-3px);box-shadow:0 12px 30px #1265b744}
+.btn-light{background:white;color:var(--blue);border-color:white}
+.btn-light:hover{background:#eaf4ff;color:var(--blue)}
+.btn-glass{background:#ffffff10;border-color:#ffffff55;color:white}
+.btn-glass:hover{background:#ffffff25}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+
+/* LOADING EXPERIENCE */
+#loader{
+ position:fixed;inset:0;z-index:9999;background:
+ radial-gradient(circle at 50% 40%,#174d75,#071b30 65%);
+ display:flex;align-items:center;justify-content:center;
+ flex-direction:column;color:white;transition:opacity 1s,visibility 1s;
+}
+#loader.hide{opacity:0;visibility:hidden;pointer-events:none}
+.loader-canvas{width:min(340px,75vw);height:300px}
+.loader-brand{font:900 35px Manrope;letter-spacing:7px;margin-top:5px}
+.loader-brand span{color:var(--mint)}
+.loader-sub{font-size:10px;letter-spacing:5px;color:#b8d5e8;margin-top:8px}
+.loader-line{width:180px;height:2px;background:#ffffff22;margin-top:30px;overflow:hidden}
+.loader-line span{display:block;width:35%;height:100%;background:var(--mint);animation:loading 1.3s infinite ease-in-out}
+.loader-percent{font-size:10px;color:#9ebbd1;margin-top:12px;letter-spacing:2px}
+@keyframes loading{from{transform:translateX(-120%)}to{transform:translateX(350%)}}
+
+/* HEADER */
+.topbar{background:#051525;color:#c6d9e9;padding:10px 0;font-size:11px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar a{color:white;font-weight:800}
+.header{position:sticky;top:0;z-index:100;background:#ffffffed;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;color:var(--blue);font:900 23px Manrope}
+.brand-symbol{width:44px;height:44px;border:3px solid var(--blue);border-radius:16px 16px 16px 4px;display:grid;place-items:center;color:var(--green);font-size:24px}
+.brand small{display:block;color:var(--green);font:800 9px "DM Sans";letter-spacing:3px;margin-top:3px}
+.nav-links{display:flex;align-items:center;gap:23px;font-size:12px;font-weight:800;color:#41566b}
+.nav-links a:hover{color:var(--blue)}
+.nav-actions{display:flex;gap:10px;align-items:center}
+.voice-button,.menu-button{border:1px solid var(--line);background:white;color:var(--blue);border-radius:50px;padding:11px 14px;font-weight:800}
+.menu-button{display:none;border-radius:12px;font-size:20px}
+
+/* HERO */
+.hero{position:relative;min-height:690px;background:linear-gradient(115deg,#06182a,#0b2e4c 65%,#0d3b50);color:white;overflow:hidden;display:flex;align-items:center}
+.hero:before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;border:1px solid #ffffff14;right:-150px;top:-120px}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid #ffffff14;right:-60px;top:-25px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}
+.hero-copy{padding:60px 0}
+.hero .eyebrow{color:var(--mint)}
+.hero h1{font-size:clamp(3rem,6vw,6rem);line-height:1.01;letter-spacing:-4px;margin:22px 0}
+.hero h1 span{color:var(--mint)}
+.hero-copy>p{max-width:560px;color:#c4d9e9;line-height:1.9;font-size:16px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}
+.hero-stats{display:flex;gap:30px;margin-top:40px;flex-wrap:wrap}
+.hero-stats strong{display:block;font:800 25px Manrope;color:white}
+.hero-stats small{color:#a9c4d9;font-size:11px}
+.hero-visual{height:560px;position:relative}
+#hero3d{width:100%;height:100%;display:block}
+.hero-caption{position:absolute;right:0;bottom:20px;text-align:right;color:#b9d5e8;font-size:10px;letter-spacing:2px}
+
+/* WELCOME VOICE */
+#welcome{
+ position:fixed;right:20px;bottom:20px;z-index:500;
+ width:min(390px,calc(100% - 40px));background:white;
+ border:1px solid var(--line);border-radius:20px;padding:20px;
+ box-shadow:var(--shadow);display:none;
+}
+#welcome.show{display:block;animation:welcomeIn .5s ease}
+@keyframes welcomeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.welcome-top{display:flex;justify-content:space-between;gap:15px}
+.welcome-top strong{font:800 16px Manrope}
+.welcome-close{border:0;background:#eef4f8;border-radius:50%;width:28px;height:28px}
+#welcome p{font-size:12px;line-height:1.7;color:var(--muted);margin:10px 0}
+.welcome-controls{display:flex;gap:9px;flex-wrap:wrap}
+.welcome-controls button{border:0;border-radius:40px;padding:10px 14px;background:var(--blue);color:white;font-weight:800;font-size:11px}
+
+/* HIGHLIGHTS */
+.highlights{background:#0d3760;color:white;padding:27px 0}
+.highlight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.highlight{display:flex;align-items:center;gap:12px}
+.highlight-icon{width:45px;height:45px;background:#ffffff18;border-radius:15px;display:grid;place-items:center;font-size:22px}
+.highlight strong{display:block;font-size:13px}
+.highlight small{font-size:10px;color:#b6d0e5}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.about-art{height:490px;position:relative;border-radius:30px;overflow:hidden;background:linear-gradient(145deg,#e2f2fc,#d9f3e4)}
+.about-art img{width:100%;height:100%;object-fit:cover;opacity:.94}
+.about-art-label{position:absolute;bottom:20px;left:20px;background:white;padding:18px 24px;border-radius:17px;box-shadow:var(--shadow)}
+.about-art-label strong{font:900 25px Manrope;color:var(--blue)}
+.about-art-label small{display:block;color:var(--green);font-weight:800;font-size:10px;letter-spacing:2px}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:25px 0}
+.check{font-size:13px;font-weight:700}
+.check span{color:var(--green);margin-right:8px}
+
+/* TREATMENTS */
+.services{background:var(--pale)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.service-card{border:1px solid var(--line);border-radius:23px;background:white;padding:27px;transition:.3s;cursor:pointer;min-height:210px}
+.service-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#a9d0ef}
+.service-icon{width:55px;height:55px;border-radius:17px;background:#eaf4ff;display:grid;place-items:center;font-size:25px;margin-bottom:20px}
+.service-card h3{font-size:17px;margin-bottom:9px}
+.service-card p{font-size:12px;line-height:1.8;color:var(--muted)}
+.service-card button{border:0;background:transparent;color:var(--blue);font-weight:800;font-size:11px;margin-top:15px}
+
+/* 3D IMPLANT */
+.implant-section{background:#061a2d;color:white;overflow:hidden}
+.implant-section .section-text{color:#c0d6e9}
+.implant-stage{height:650px;border:1px solid #ffffff16;border-radius:30px;overflow:hidden;position:relative;margin-top:40px;background:radial-gradient(circle at 50% 40%,#174d72,#071d32 70%)}
+#implant3d{width:100%;height:100%;display:block}
+.implant-title{position:absolute;top:27px;left:30px;z-index:2}
+.implant-title small{font-size:10px;letter-spacing:3px;color:var(--mint)}
+.implant-title strong{display:block;font:800 22px Manrope;margin-top:8px}
+.implant-progress{position:absolute;left:30px;right:30px;bottom:32px;height:3px;background:#ffffff30}
+.implant-progress span{display:block;height:100%;width:0;background:var(--mint);transition:width .1s}
+.implant-instruction{position:absolute;right:30px;bottom:45px;font-size:10px;color:#c0d6e9;letter-spacing:1px;text-align:right;max-width:260px}
+
+/* DOCTORS */
+.doctor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.doctor-card{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:white;transition:.3s;cursor:pointer}
+.doctor-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.doctor-photo{height:205px;position:relative;display:grid;place-items:center;background:linear-gradient(140deg,#e7f3ff,#dff3e5)}
+.doctor-photo:before{content:"";width:145px;height:145px;border-radius:50%;position:absolute;background:#ffffffa8}
+.doctor-avatar{position:relative;z-index:2;width:105px;height:105px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,var(--blue),var(--green));border:7px solid white;color:white;font:800 27px Manrope}
+.doctor-info{padding:20px}
+.doctor-info h3{font-size:16px;margin-bottom:7px}
+.doctor-info p{font-size:12px;color:var(--muted);line-height:1.6}
+.doctor-tag{display:inline-block;margin-top:12px;padding:7px 10px;background:#eef7ff;color:var(--blue);font-size:9px;font-weight:800;border-radius:30px}
+.doctor-click{display:block;margin-top:13px;color:var(--blue);font-size:11px;font-weight:800}
+.doctor-note{margin-top:20px;font-size:11px;color:var(--muted);line-height:1.7}
+
+/* MODALS */
+.modal{position:fixed;inset:0;z-index:1000;background:#06182acc;backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-box{background:white;width:min(520px,100%);border-radius:25px;padding:30px;position:relative;max-height:85vh;overflow:auto;animation:modalIn .3s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(15px) scale(.98)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;right:18px;top:18px;width:36px;height:36px;border:0;border-radius:50%;background:#edf3f8;font-size:20px}
+.modal-avatar{width:85px;height:85px;border-radius:50%;background:linear-gradient(140deg,var(--blue),var(--green));color:white;display:grid;place-items:center;font:800 25px Manrope;margin-bottom:20px}
+.modal-box h2{font-size:25px;margin-bottom:8px}
+.modal-box p{color:var(--muted);font-size:13px;line-height:1.8;margin:12px 0}
+.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+
+/* REVIEWS */
+.reviews{background:var(--pale)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.review-card{background:white;border:1px solid var(--line);border-radius:20px;padding:25px}
+.stars{color:#f2a900;letter-spacing:3px;margin-bottom:13px}
+.review-card p{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:15px}
+.review-card strong{font-size:11px}
+.rating{display:flex;align-items:center;gap:17px;background:white;padding:20px 25px;border-radius:18px;border:1px solid var(--line);width:max-content;max-width:100%;margin-top:25px}
+.rating b{font:900 35px Manrope;color:var(--blue)}
+.rating small{display:block;color:var(--muted)}
+
+/* FAQ */
+.faq{background:white}
+.faq-list{max-width:850px;margin:35px auto 0}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-question{width:100%;display:flex;justify-content:space-between;gap:20px;text-align:left;border:0;background:white;padding:22px 0;font-weight:800;color:var(--text)}
+.faq-answer{display:none;color:var(--muted);font-size:13px;line-height:1.8;padding:0 20px 20px 0}
+.faq-item.active .faq-answer{display:block}
+.faq-item.active .faq-question span{transform:rotate(45deg)}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}
+.contact-card{background:#092d50;color:white;border-radius:25px;padding:30px}
+.contact-card h3{font-size:24px;margin-bottom:15px}
+.contact-line{padding:17px 0;border-bottom:1px solid #ffffff24}
+.contact-line small{display:block;color:#a9c9e2;font-size:10px;letter-spacing:1px;margin-bottom:7px}
+.contact-line strong{font-size:13px;line-height:1.8}
+.form-box{border:1px solid var(--line);border-radius:25px;padding:30px;box-shadow:var(--shadow)}
+.form-box h3{font-size:23px;margin-bottom:8px}
+.form-box>p{font-size:12px;color:var(--muted);margin-bottom:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:11px;font-weight:800}
+.field input,.field textarea,.field select{width:100%;padding:14px;border:1px solid var(--line);border-radius:12px;outline:none;background:#fbfdff}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue)}
+.field textarea{min-height:100px;resize:vertical}
+.form-note{font-size:10px;color:var(--muted);margin-top:12px}
+.map{height:300px;border-radius:22px;overflow:hidden;margin-top:30px;background:#e8f3fa}
+.map iframe{width:100%;height:100%;border:0}
+
+/* FOOTER */
+.footer{background:#06182a;color:white;padding:55px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:35px}
+.footer h4{margin-bottom:16px}
+.footer p,.footer a{color:#aec4d6;font-size:12px;line-height:1.8}
+.footer a{display:block;margin:8px 0}
+.footer a:hover{color:white}
+.copyright{border-top:1px solid #ffffff20;margin-top:35px;padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#92aabd;font-size:10px}
+.whatsapp{position:fixed;right:20px;bottom:20px;z-index:200;width:58px;height:58px;border-radius:50%;background:#20bd67;color:white;display:grid;place-items:center;font-size:25px;box-shadow:0 12px 28px #0b784344}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:950px){
+ .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .hero-visual{height:430px}
+ .service-grid{grid-template-columns:repeat(2,1fr)}
+ .doctor-grid{grid-template-columns:repeat(2,1fr)}
+ .highlight-grid{grid-template-columns:repeat(2,1fr)}
+ .nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:white;padding:25px;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start}
+ .nav-links.open{display:flex}
+ .menu-button{display:block}
+ .nav-actions .btn{display:none}
+}
+@media(max-width:600px){
+ .container{width:calc(100% - 30px)}
+ .section{padding:72px 0}
+ .hero{min-height:auto;padding:35px 0 55px}
+ .hero h1{font-size:45px;letter-spacing:-2px}
+ .hero-copy{padding:25px 0}
+ .hero-visual{height:330px}
+ .hero-stats{gap:18px}
+ .highlight-grid{gap:15px 8px}
+ .highlight strong{font-size:10px}
+ .highlight small{font-size:9px}
+ .about-art{height:330px}
+ .service-grid,.doctor-grid,.review-grid{grid-template-columns:1fr}
+ .doctor-photo{height:180px}
+ .implant-stage{height:480px}
+ .implant-instruction{max-width:145px;font-size:9px}
+ .form-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ .form-box{padding:20px}
+ .footer-grid{grid-template-columns:1fr}
+ .rating{width:100%}
+ .voice-button{font-size:10px;padding:9px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*:before,*:after{animation:none!important;transition:none!important}
+}
+</style>
 </head>
-<body>
-  <div class="topbar"><div class="container"><span>📍 1st Floor, HNGC Icon Star, 7th Block, Krishnapura, Surathkal</span><span class="hide-mobile">Clinic enquiries: <a href="tel:+917259437999">+91 72594 37999</a></span></div></div>
-  <div class="nav-wrap"><nav class="nav container">
-    <a class="brand" href="#home"><span class="brand-mark">✦</span><span>OPAL <small>DENTAL CARE</small></span></a>
-    <div class="nav-links" id="navLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Treatments</a><a href="#doctors">Our Doctors</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
-    <a class="btn nav-cta" href="#appointment">Book Appointment</a><button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
-  </nav></div>
 
-  <main>
-    <section class="hero" id="home"><div class="container hero-grid">
-      <div class="hero-copy reveal"><span class="eyebrow">Multi-speciality dental clinic</span><h1>A confident smile begins with <span>care.</span></h1><p>Thoughtful dental care, modern treatment options and a friendly team — helping you take the next step towards a healthier smile.</p>
-        <div class="hero-actions"><a class="btn" href="#appointment">Book a Visit <span>→</span></a><a class="btn outline" href="#services">Explore Treatments</a></div>
-        <div class="trust-row"><div class="trust-item"><strong>4.9/5</strong><span>Google rating</span></div><div class="trust-item"><strong>65+</strong><span>Patient reviews</span></div><div class="trust-item"><strong>Multi</strong><span>Speciality care</span></div></div>
-      </div>
-      <div class="hero-visual reveal" aria-label="Illustration of a healthy tooth"><img class="hero-photo" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80" alt="" />
-        <div class="float-card one"><span class="pulse"></span>Care that puts you first<small>Comfort • Clarity • Confidence</small></div>
-        <svg class="hero-tooth" viewBox="0 0 240 300" role="img" aria-label="Illustrated healthy tooth"><defs><linearGradient id="toothGrad" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#eaf4fa"/><stop offset="1" stop-color="#b9d4e8"/></linearGradient><filter id="toothShadow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="120" cy="280" rx="68" ry="12" fill="#1d5a8a" opacity=".18" filter="url(#toothShadow)"/><path d="M45 66 C28 18 78 7 112 26 C146 7 205 18 195 77 C187 126 168 149 159 213 C153 255 130 267 119 218 C108 267 84 255 78 213 C69 149 53 119 45 66Z" fill="url(#toothGrad)" stroke="#9fc2d9" stroke-width="3"/><path d="M62 66 C57 42 79 34 105 46" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".9"/><path d="M126 45 C154 29 181 45 180 73" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".65"/></svg>
-        <div class="float-card two">Your smile matters<small>Personalised dental attention</small></div>
-      </div>
-    </div></section>
+<body class="locked">
 
-    <section class="feature-strip"><div class="container feature-grid">
-      <div class="feature"><span class="feature-icon">🦷</span><div><strong>Multiple specialities</strong><small>Care across dental needs</small></div></div>
-      <div class="feature"><span class="feature-icon">🤝</span><div><strong>Patient-first approach</strong><small>Clear, friendly guidance</small></div></div>
-      <div class="feature"><span class="feature-icon">✨</span><div><strong>Smile-focused care</strong><small>Restorative and cosmetic options</small></div></div>
-      <div class="feature"><span class="feature-icon">📍</span><div><strong>Convenient location</strong><small>Surathkal, Mangaluru</small></div></div>
-    </div></section>
+<!-- LOADING SCREEN -->
+<div id="loader">
+ <canvas id="loader3d" class="loader-canvas"></canvas>
+ <div class="loader-brand">O<span>PAL</span></div>
+ <div class="loader-sub">DENTAL CARE</div>
+ <div class="loader-line"><span></span></div>
+ <div class="loader-percent" id="loaderText">PREPARING YOUR EXPERIENCE</div>
+</div>
 
-    <section class="section" id="about"><div class="container about-grid">
-      <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85" alt="Modern dental clinic treatment room" loading="lazy"><div class="about-badge"><strong>OPAL</strong><span>Multi-speciality Dental Clinic</span></div></div>
-      <div class="reveal"><span class="eyebrow">Welcome to Opal</span><h2 style="font-size:clamp(2rem,4vw,3.2rem);margin:15px 0">Dental care with comfort, clarity and confidence.</h2><p>At Opal Dental Care, patients can explore a range of dental services with support from clinicians across different specialities. Our aim is to make every visit welcoming and every treatment conversation clear.</p>
-        <div class="check-list"><div class="check"><i>✓</i> Multiple dental specialities</div><div class="check"><i>✓</i> Treatment guidance</div><div class="check"><i>✓</i> Family dental care</div><div class="check"><i>✓</i> Appointment assistance</div></div><a class="btn" href="#doctors">Meet Our Team →</a>
-      </div>
-    </div></section>
+<!-- WELCOME VOICE CARD -->
+<div id="welcome" role="status">
+ <div class="welcome-top">
+  <strong>Welcome to Opal Dental Care</strong>
+  <button class="welcome-close" id="welcomeClose" aria-label="Close">×</button>
+ </div>
+ <p id="welcomeMessage">Hi! Welcome to Opal Dental Care. Your journey towards a healthier, more confident smile starts here. How may we help you?</p>
+ <div class="welcome-controls">
+  <button id="speakButton">🔊 Hear welcome</button>
+  <button id="stopSpeech">Stop voice</button>
+ </div>
+</div>
 
-    <section class="section services" id="services"><div class="container"><div class="section-head reveal"><span class="eyebrow">What we offer</span><h2>Dental treatments for every stage of your smile.</h2><p>Explore the services listed by Opal Dental Care. Your dentist will recommend suitable options after an examination.</p></div>
-      <div class="service-grid">
-        <article class="service-card reveal"><div class="service-icon">🦷</div><h3>Dental Implants</h3><p>Options for replacing missing teeth and restoring function.</p></article>
-        <article class="service-card reveal"><div class="service-icon">😁</div><h3>Cosmetic Dentistry</h3><p>Smile-enhancing treatments, including bonding and reshaping.</p></article>
-        <article class="service-card reveal"><div class="service-icon">✨</div><h3>Veneers & Crowns</h3><p>Restorative and aesthetic options for damaged or discoloured teeth.</p></article>
-        <article class="service-card reveal"><div class="service-icon">〰️</div><h3>Root Canal Treatment</h3><p>Care for teeth affected by infection or inflammation inside the tooth.</p></article>
-        <article class="service-card reveal"><div class="service-icon">🪥</div><h3>Teeth Cleaning & Check-ups</h3><p>Routine assessments and professional cleaning services.</p></article>
-        <article class="service-card reveal"><div class="service-icon">🧒</div><h3>Paediatric Dentistry</h3><p>Dental care and guidance for children and growing smiles.</p></article>
-        <article class="service-card reveal"><div class="service-icon">🦷</div><h3>Braces & Orthodontics</h3><p>Assessment and treatment options for tooth alignment.</p></article>
-        <article class="service-card reveal"><div class="service-icon">🩺</div><h3>Oral Surgery & Extractions</h3><p>Specialist assessment for surgical dental needs and extractions.</p></article>
-        <article class="service-card reveal"><div class="service-icon">🛡️</div><h3>More Dental Services</h3><p>Dentures, bridges, fillings, sealants, mouth guards, X-rays and emergency care.</p></article>
-      </div>
-    </div></section>
+<!-- HEADER -->
+<div class="topbar">
+ <div class="container">
+  <span>📍 HNGC Icon Star, Krishnapura, Surathkal, Mangaluru</span>
+  <span>Call: <a href="tel:+917259437999">+91 72594 37999</a></span>
+ </div>
+</div>
 
-    <section class="section implant" id="implant"><div class="container"><div class="section-head reveal"><span class="eyebrow" style="color:#8ed6a0">A closer look</span><h2>See how a missing-tooth space can be restored.</h2><p>Scroll through this visual to see an illustrative tooth move into the gap. It is an educational animation, not a treatment plan or a depiction of an actual procedure.</p></div>
-      <div class="implant-stage reveal" id="implantStage"><div class="implant-caption">SCROLL-LED VISUAL <strong>A tooth finds its place</strong></div>
-        <div class="implant-tooth" id="movingTooth"><svg viewBox="0 0 100 160" aria-label="Illustrative tooth"><defs><linearGradient id="implantGrad" x1="0" x2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#e9f3f8"/><stop offset="1" stop-color="#b7d2e5"/></linearGradient></defs><path d="M12 39 C4 8 31 3 49 16 C68 3 96 8 88 43 C82 72 69 86 66 125 C63 151 53 153 49 119 C44 153 34 151 31 125 C27 86 18 70 12 39Z" fill="url(#implantGrad)" stroke="#a8c5d9" stroke-width="2"/><path d="M20 31 Q30 18 43 25" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></svg></div>
-        <div class="gum-teeth"><div class="gum-tooth"></div><div class="gum-tooth"></div><div class="gum-tooth"></div><div class="missing-slot" id="missingSlot"></div><div class="gum-tooth"></div><div class="gum-tooth"></div><div class="gum-tooth"></div></div><div class="jaw"></div>
-        <div class="scroll-hint">↓ Keep scrolling to move the tooth</div><div class="implant-note">Illustrative 3D-style concept. Actual implant treatment depends on individual clinical assessment.</div>
-      </div>
-    </div></section>
+<header class="header">
+ <nav class="nav container">
+  <a href="#home" class="brand">
+   <span class="brand-symbol">✦</span>
+   <span>OPAL<small>DENTAL CARE</small></span>
+  </a>
 
-    <section class="section doctors" id="doctors"><div class="container"><div class="section-head reveal"><span class="eyebrow">The people behind your care</span><h2>Meet the Opal Dental Care team.</h2><p>A multi-speciality team covering a range of dental disciplines. Individual profile photographs and verified qualifications can be added once supplied by the clinic.</p></div>
-      <div class="doctor-grid">
-        <article class="doctor-card reveal"><div class="doctor-art"><div class="doctor-avatar">FF</div></div><div class="doctor-body"><h3>Dr. Fowzaan Feroz</h3><p>Specialist in Prosthodontics</p><span class="doctor-tag">Prosthodontist · MDS</span></div></article>
-        <article class="doctor-card reveal"><div class="doctor-art"><div class="doctor-avatar">SA</div></div><div class="doctor-body"><h3>Dr. Shaimath Asrina</h3><p>Dental Surgeon</p><span class="doctor-tag">Dental Surgeon</span></div></article>
-        <article class="doctor-card reveal"><div class="doctor-art"><div class="doctor-avatar">SS</div></div><div class="doctor-body"><h3>Dr. Shailesh Shenoy</h3><p>Visiting Specialist</p><span class="doctor-tag">Pedodontist · MDS</span></div></article>
-        <article class="doctor-card reveal"><div class="doctor-art"><div class="doctor-avatar">R</div></div><div class="doctor-body"><h3>Dr. Ritesh</h3><p>Visiting Specialist</p><span class="doctor-tag">Oral Surgeon · MDS</span></div></article>
-        <article class="doctor-card reveal"><div class="doctor-art"><div class="doctor-avatar">SS</div></div><div class="doctor-body"><h3>Dr. Shravan Shetty</h3><p>Visiting Specialist</p><span class="doctor-tag">Orthodontist · MDS</span></div></article>
-        <article class="doctor-card reveal"><div class="doctor-art"><div class="doctor-avatar">S</div></div><div class="doctor-body"><h3>Dr. Shazia</h3><p>Visiting Specialist</p><span class="doctor-tag">Periodontist · MDS</span></div></article>
-        <article class="doctor-card reveal"><div class="doctor-art"><div class="doctor-avatar">F</div></div><div class="doctor-body"><h3>Dr. Faseeh</h3><p>Visiting Specialist</p><span class="doctor-tag">Endodontist · MDS</span></div></article>
-      </div>
-      <p class="doctor-footnote">Doctor portraits are represented by initials in this first preview. Please replace them with clinic-approved photographs and confirm each doctor's full name, qualification and visiting schedule before the website goes live.</p>
-    </div></section>
+  <div class="nav-links" id="navLinks">
+   <a href="#home">Home</a>
+   <a href="#about">About</a>
+   <a href="#services">Treatments</a>
+   <a href="#implant">3D Experience</a>
+   <a href="#doctors">Our Doctors</a>
+   <a href="#reviews">Reviews</a>
+   <a href="#contact">Contact</a>
+  </div>
 
-    <section class="section reviews" id="reviews"><div class="container"><div class="section-head reveal"><span class="eyebrow">Patient feedback</span><h2>Trusted by patients in the community.</h2><p>Opal Dental Care currently displays a 4.9-star Google rating from 65 reviews.</p></div>
-      <div class="review-grid">
-        <article class="review reveal"><div class="stars">★★★★★</div><p>“The doctors were professional and friendly. They explained the procedures beforehand and made the visit comfortable.”</p><strong>Google review summary</strong></article>
-        <article class="review reveal"><div class="stars">★★★★★</div><p>“The treatment was thorough and the team took time to explain everything clearly.”</p><strong>Google review summary</strong></article>
-        <article class="review reveal"><div class="stars">★★★★★</div><p>“The clinic is clean and modern, which added to my confidence in the care.”</p><strong>Google review summary</strong></article>
-      </div>
-      <div class="rating-panel reveal"><b>4.9</b><div><div class="stars">★★★★★</div><span>Based on 65 Google reviews · Rating shown from supplied clinic listing</span></div></div>
-    </div></section>
+  <div class="nav-actions">
+   <button class="voice-button" id="voiceToggle">🔊 Voice</button>
+   <a href="#appointment" class="btn">Book Appointment →</a>
+   <button class="menu-button" id="menuButton" aria-label="Menu">☰</button>
+  </div>
+ </nav>
+</header>
 
-    <section class="section" id="contact"><div class="container booking-grid">
-      <div class="reveal"><span class="eyebrow">Visit Opal Dental Care</span><h2 style="font-size:clamp(2rem,4vw,3.1rem);margin:15px 0">Let's take care of your smile.</h2><p>Contact the clinic to ask about appointments, treatment availability and visiting specialist schedules.</p>
-        <div class="contact-card"><h3>Clinic information</h3><div class="contact-line"><small>CALL / WHATSAPP</small><strong>+91 72594 37999</strong></div><div class="contact-line"><small>ADDRESS</small><strong>1st Floor, HNGC Icon Star, 7th Block, Krishnapura, Surathkal, Mangaluru, Karnataka 575014</strong></div><div class="contact-line"><small>CLINIC HOURS — PLEASE CONFIRM</small><strong>Mon–Sat: 10 AM–1 PM, 3 PM–8 PM<br>Sunday: 10 AM–1 PM</strong></div><a class="btn" style="background:#fff;color:#0c3159;border-color:#fff;margin-top:20px" href="https://wa.me/917259437999?text=Hello%20Opal%20Dental%20Care%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Chat on WhatsApp →</a></div>
-      </div>
-      <form class="booking-form reveal" id="appointment"><h3 style="font-size:1.45rem;margin-bottom:8px">Request an appointment</h3><p style="margin-top:0;font-size:.88rem">Share your details and continue to WhatsApp to send your enquiry.</p>
-        <div class="form-grid"><div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Full name"></div><div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" required type="tel" placeholder="+91"></div><div class="field"><label for="service">Treatment interested in</label><select id="service" name="service"><option>General check-up</option><option>Dental implants</option><option>Cosmetic dentistry</option><option>Root canal treatment</option><option>Braces / orthodontics</option><option>Teeth cleaning</option><option>Other / not sure</option></select></div><div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div><div class="field full"><label for="message">Message (optional)</label><textarea id="message" name="message" placeholder="Tell us briefly how we can help"></textarea></div><div class="field full"><button class="btn" type="submit">Continue to WhatsApp →</button></div></div><p class="form-help">This form opens WhatsApp with your enquiry details. An appointment is not confirmed until the clinic replies.</p>
-      </form>
+<main>
+
+<!-- HERO WITH 3D TOOTH -->
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div class="hero-copy reveal">
+   <span class="eyebrow">A new dimension of dental care</span>
+   <h1>Where healthy smiles meet <span>confidence.</span></h1>
+   <p>Welcome to Opal Dental Care. Discover multi-speciality dental services, thoughtful care and a team focused on your smile.</p>
+   <div class="hero-actions">
+    <a class="btn" href="#appointment">Book Your Visit →</a>
+    <a class="btn btn-glass" href="#services">Explore Treatments</a>
+   </div>
+   <div class="hero-stats">
+    <div><strong>4.9 ★</strong><small>Google rating</small></div>
+    <div><strong>65+</strong><small>Patient reviews</small></div>
+    <div><strong>7</strong><small>Listed clinicians</small></div>
+   </div>
+  </div>
+
+  <div class="hero-visual reveal">
+   <canvas id="hero3d" aria-label="Interactive rotating 3D tooth"></canvas>
+   <div class="hero-caption">A NEW DIMENSION OF DENTAL CARE</div>
+  </div>
+ </div>
+</section>
+
+<section class="highlights">
+ <div class="container highlight-grid">
+  <div class="highlight"><span class="highlight-icon">🦷</span><div><strong>Multi-speciality</strong><small>Dental care</small></div></div>
+  <div class="highlight"><span class="highlight-icon">🤝</span><div><strong>Patient focused</strong><small>Personal attention</small></div></div>
+  <div class="highlight"><span class="highlight-icon">✨</span><div><strong>Smile focused</strong><small>Restorative care</small></div></div>
+  <div class="highlight"><span class="highlight-icon">📍</span><div><strong>Surathkal</strong><small>Mangaluru</small></div></div>
+ </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+ <div class="container about-grid">
+  <div class="about-art reveal">
+   <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1100&q=85" alt="Dental clinic interior" loading="lazy">
+   <div class="about-art-label"><strong>OPAL</strong><small>MULTI-SPECIALITY DENTAL CLINIC</small></div>
+  </div>
+  <div class="reveal">
+   <span class="eyebrow">Welcome to Opal</span>
+   <h2 class="section-title">Your smile deserves thoughtful care.</h2>
+   <p class="section-text">Opal Dental Care brings together a range of dental services and clinical specialities in one clinic. Our goal is to make dental visits welcoming and treatment conversations clear.</p>
+   <div class="check-grid">
+    <div class="check"><span>✓</span> Multiple specialities</div>
+    <div class="check"><span>✓</span> Treatment guidance</div>
+    <div class="check"><span>✓</span> Family dental care</div>
+    <div class="check"><span>✓</span> Appointment assistance</div>
+   </div>
+   <a href="#doctors" class="btn">Meet Our Doctors →</a>
+  </div>
+ </div>
+</section>
+
+<!-- TREATMENTS -->
+<section class="section services" id="services">
+ <div class="container">
+  <div class="reveal">
+   <span class="eyebrow">Explore our treatments</span>
+   <h2 class="section-title">Care for every kind of smile.</h2>
+   <p class="section-text">Choose a treatment to learn more. Your dentist will assess your needs and explain suitable treatment options.</p>
+  </div>
+  <div class="service-grid" id="serviceGrid"></div>
+ </div>
+</section>
+
+<!-- FULL 3D SCROLL EXPERIENCE -->
+<section class="section implant-section" id="implant">
+ <div class="container">
+  <div class="reveal">
+   <span class="eyebrow" style="color:var(--mint)">Interactive 3D experience</span>
+   <h2 class="section-title">A tooth. A gap. A new possibility.</h2>
+   <p class="section-text">Scroll to control the 3D animation. Watch an illustrative tooth move towards a missing-tooth space. This is a visual educational concept, not a real surgical procedure.</p>
+  </div>
+  <div class="implant-stage reveal" id="implantStage">
+   <canvas id="implant3d" aria-label="3D tooth placement educational animation"></canvas>
+   <div class="implant-title">
+    <small>SCROLL CONTROLLED EXPERIENCE</small>
+    <strong>Watch the tooth find its place</strong>
+   </div>
+   <div class="implant-instruction" id="implantInstruction">SCROLL DOWN TO EXPLORE THE 3D EXPERIENCE</div>
+   <div class="implant-progress"><span id="implantProgress"></span></div>
+  </div>
+ </div>
+</section>
+
+<!-- DOCTORS -->
+<section class="section" id="doctors">
+ <div class="container">
+  <div class="reveal">
+   <span class="eyebrow">Meet the specialists</span>
+   <h2 class="section-title">The people behind your smile.</h2>
+   <p class="section-text">Select any doctor to open their profile and speciality information.</p>
+  </div>
+  <div class="doctor-grid" id="doctorGrid"></div>
+  <p class="doctor-note">Portraits are initials-based placeholders. Clinic-approved photographs and verified professional credentials must be added before launch.</p>
+ </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+ <div class="container">
+  <div class="reveal">
+   <span class="eyebrow">Patient experiences</span>
+   <h2 class="section-title">A trusted name in dental care.</h2>
+   <p class="section-text">The clinic listing supplied for this project shows a 4.9-star Google rating from 65 reviews.</p>
+  </div>
+  <div class="review-grid">
+   <article class="review-card reveal"><div class="stars">★★★★★</div><p>“The doctors were professional and friendly. They explained the procedures beforehand and made us comfortable.”</p><strong>Google review summary</strong></article>
+   <article class="review-card reveal"><div class="stars">★★★★★</div><p>“The team took time to explain everything clearly and made the treatment experience comfortable.”</p><strong>Google review summary</strong></article>
+   <article class="review-card reveal"><div class="stars">★★★★★</div><p>“The clinic is clean and modern, which added to my confidence in the care.”</p><strong>Google review summary</strong></article>
+  </div>
+  <div class="rating reveal"><b>4.9</b><div><div class="stars">★★★★★</div><small>65 Google reviews · supplied listing</small></div></div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+ <div class="container">
+  <div class="reveal" style="text-align:center">
+   <span class="eyebrow">Need to know</span>
+   <h2 class="section-title">Frequently asked questions.</h2>
+   <p class="section-text" style="margin:auto">Some helpful information before visiting the clinic.</p>
+  </div>
+  <div class="faq-list" id="faqList">
+   <div class="faq-item"><button class="faq-question">How can I book an appointment? <span>＋</span></button><div class="faq-answer">Use the appointment form on this website. It will prepare a WhatsApp message for the clinic. Your appointment is confirmed only after the clinic replies.</div></div>
+   <div class="faq-item"><button class="faq-question">What treatments are available? <span>＋</span></button><div class="faq-answer">The clinic lists implants, root canals, braces, cosmetic procedures, dentures, bridges, crowns, veneers, cleaning, paediatric dentistry and other services. Ask the clinic about the availability of a particular treatment.</div></div>
+   <div class="faq-item"><button class="faq-question">Where is Opal Dental Care? <span>＋</span></button><div class="faq-answer">1st Floor, HNGC Icon Star, 7th Block, Krishnapura, Surathkal, Mangaluru, Karnataka 575014.</div></div>
+   <div class="faq-item"><button class="faq-question">Can I contact the clinic on WhatsApp? <span>＋</span></button><div class="faq-answer">Yes. Use the WhatsApp buttons on this website to contact +91 72594 37999.</div></div>
+   <div class="faq-item"><button class="faq-question">Are the listed clinic timings confirmed? <span>＋</span></button><div class="faq-answer">Please call the clinic to confirm the current opening hours and visiting specialist schedules before travelling.</div></div>
+  </div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+ <div class="container">
+  <div class="contact-grid">
+   <div class="reveal">
+    <span class="eyebrow">Let's connect</span>
+    <h2 class="section-title">Your next smile starts here.</h2>
+    <p class="section-text" style="margin-bottom:25px">Get in touch with Opal Dental Care for appointments, treatment enquiries and visiting specialist availability.</p>
+    <div class="contact-card">
+     <h3>Visit our clinic</h3>
+     <div class="contact-line"><small>PHONE / WHATSAPP</small><strong>+91 72594 37999</strong></div>
+     <div class="contact-line"><small>ADDRESS</small><strong>1st Floor, HNGC Icon Star, 7th Block, Krishnapura, Surathkal, Mangaluru, Karnataka 575014</strong></div>
+     <div class="contact-line"><small>LISTED CLINIC TIMINGS — VERIFY BEFORE PUBLISHING</small><strong>Mon–Sat: 10 AM–1 PM, 3 PM–8 PM<br>Sunday: 10 AM–1 PM</strong></div>
+     <a class="btn btn-light" style="margin-top:20px" href="https://wa.me/917259437999" target="_blank" rel="noopener">Chat on WhatsApp →</a>
     </div>
-    <div class="container map-box reveal"><iframe title="Map to Opal Dental Care" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Opal%20Dental%20Care%2C%20Surathkal%2C%20Mangaluru&output=embed"></iframe></div>
-    </section>
-  </main>
+   </div>
+   <form class="form-box reveal" id="appointment">
+    <h3>Request an appointment</h3>
+    <p>Fill in your details to send an enquiry through WhatsApp.</p>
+    <div class="form-grid">
+     <div class="field"><label for="patientName">Full name *</label><input id="patientName" name="name" required placeholder="Your name"></div>
+     <div class="field"><label for="patientPhone">Phone number *</label><input id="patientPhone" name="phone" type="tel" required placeholder="+91"></div>
+     <div class="field"><label for="treatment">Treatment</label><select id="treatment" name="treatment"><option>General check-up</option><option>Dental implants</option><option>Cosmetic dentistry</option><option>Root canal</option><option>Braces / orthodontics</option><option>Teeth cleaning</option><option>Other / not sure</option></select></div>
+     <div class="field"><label for="preferredDate">Preferred date</label><input id="preferredDate" name="date" type="date"></div>
+     <div class="field full"><label for="patientMessage">Message</label><textarea id="patientMessage" name="message" placeholder="How can we help?"></textarea></div>
+     <div class="field full"><button class="btn" type="submit">Send appointment enquiry →</button></div>
+    </div>
+    <p class="form-note">This form opens WhatsApp. It does not store patient information on this website and does not itself confirm an appointment.</p>
+   </form>
+  </div>
+  <div class="map reveal">
+   <iframe title="Opal Dental Care map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Opal%20Dental%20Care%2C%20Surathkal%2C%20Mangaluru&output=embed"></iframe>
+  </div>
+ </div>
+</section>
+</main>
 
-  <footer class="footer"><div class="container"><div class="footer-grid">
-    <div><a class="brand" href="#home" style="color:white"><span class="brand-mark">✦</span><span>OPAL <small>DENTAL CARE</small></span></a><p>Multi-speciality dental care in Surathkal, Mangaluru. A healthier smile starts with a conversation.</p></div>
-    <div><h4>Explore</h4><a href="#about">About the clinic</a><a href="#services">Treatments</a><a href="#doctors">Our doctors</a><a href="#reviews">Patient feedback</a></div>
-    <div><h4>Get in touch</h4><a href="tel:+917259437999">+91 72594 37999</a><a href="https://wa.me/917259437999" target="_blank" rel="noopener">WhatsApp</a><a href="#contact">Surathkal, Mangaluru</a></div>
-  </div><div class="copyright"><span>© <span id="year"></span> Opal Dental Care. All rights reserved.</span><span>Website concept by VELORA DIGITAL</span></div></div></footer>
-  <a class="wa-float" href="https://wa.me/917259437999?text=Hello%20Opal%20Dental%20Care" target="_blank" rel="noopener" aria-label="Chat with Opal Dental Care on WhatsApp">☏</a>
+<footer class="footer">
+ <div class="container">
+  <div class="footer-grid">
+   <div><a class="brand" href="#home" style="color:white"><span class="brand-symbol">✦</span><span>OPAL<small>DENTAL CARE</small></span></a><p>Multi-speciality dental care in Surathkal, Mangaluru. A healthier smile starts with a conversation.</p></div>
+   <div><h4>Explore</h4><a href="#about">About</a><a href="#services">Treatments</a><a href="#implant">3D experience</a><a href="#doctors">Our doctors</a><a href="#faq">FAQs</a></div>
+   <div><h4>Contact</h4><a href="tel:+917259437999">+91 72594 37999</a><a href="https://wa.me/917259437999">WhatsApp</a><a href="#contact">Surathkal, Mangaluru</a></div>
+  </div>
+  <div class="copyright"><span>© <span id="year"></span> Opal Dental Care</span><span>Website experience by VELORA DIGITAL</span></div>
+ </div>
+</footer>
 
-  <script>
-    const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
-    menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
-    document.getElementById('year').textContent=new Date().getFullYear();
+<a class="whatsapp" href="https://wa.me/917259437999?text=Hello%20Opal%20Dental%20Care" target="_blank" rel="noopener" aria-label="WhatsApp Opal Dental Care">☏</a>
 
-    // Reveal sections as they enter the viewport.
-    const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+<!-- DOCTOR MODAL -->
+<div class="modal" id="doctorModal" role="dialog" aria-modal="true" aria-labelledby="modalDoctorName">
+ <div class="modal-box">
+  <button class="modal-close" data-close="doctorModal" aria-label="Close">×</button>
+  <div class="modal-avatar" id="modalAvatar">FF</div>
+  <span class="eyebrow">OPAL DENTAL CARE</span>
+  <h2 id="modalDoctorName"></h2>
+  <strong id="modalDoctorSpeciality" style="color:var(--blue);font-size:12px"></strong>
+  <p id="modalDoctorDescription"></p>
+  <p id="modalDoctorExtra"></p>
+  <div class="modal-actions">
+   <a class="btn" href="#appointment" id="modalBook">Request Appointment →</a>
+   <a class="btn btn-light" style="background:#eaf4ff" href="tel:+917259437999">Call Clinic</a>
+  </div>
+ </div>
+</div>
 
-    // Scroll-controlled tooth movement: the tooth travels from above the jaw into the illustrated gap.
-    const stage=document.getElementById('implantStage'),movingTooth=document.getElementById('movingTooth');
-    function updateTooth(){
-      const rect=stage.getBoundingClientRect(),vh=window.innerHeight;
-      const start=vh*.82,end=-rect.height*.25;
-      const progress=Math.max(0,Math.min(1,(start-rect.top)/(start-end)));
-      const y=progress*215;
-      const scale=1-progress*.18;
-      movingTooth.style.transform=`translate3d(0,${y}px,0) scale(${scale}) rotate(${(1-progress)*-7}deg)`;
-      movingTooth.style.opacity=String(.35+progress*.65);
+<!-- TREATMENT MODAL -->
+<div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalServiceName">
+ <div class="modal-box">
+  <button class="modal-close" data-close="serviceModal" aria-label="Close">×</button>
+  <div class="modal-avatar" id="modalServiceIcon">🦷</div>
+  <span class="eyebrow">TREATMENT INFORMATION</span>
+  <h2 id="modalServiceName"></h2>
+  <p id="modalServiceDescription"></p>
+  <p>For personalised advice, book a consultation. The dentist will assess your dental needs and explain appropriate options.</p>
+  <a class="btn" href="#appointment" id="serviceBook">Enquire about treatment →</a>
+ </div>
+</div>
+<script type="module">
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js";
+
+/* ======================================
+   1. 3D TOOTH MODEL
+====================================== */
+
+function createTooth(){
+ const s=new THREE.Shape();
+
+ s.moveTo(-.66,.35);
+ s.bezierCurveTo(-.9,.95,-.35,1.2,0,.85);
+ s.bezierCurveTo(.35,1.2,.9,.95,.66,.35);
+ s.bezierCurveTo(.58,-.1,.37,-.35,.29,-.95);
+ s.bezierCurveTo(.23,-1.35,.07,-1.3,0,-.88);
+ s.bezierCurveTo(-.07,-1.3,-.23,-1.35,-.29,-.95);
+ s.bezierCurveTo(-.37,-.35,-.58,-.1,-.66,.35);
+
+ const geo=new THREE.ExtrudeGeometry(s,{
+  depth:.4,bevelEnabled:true,bevelSegments:7,
+  bevelSize:.1,bevelThickness:.1,curveSegments:32
+ });
+ geo.center();
+
+ const material=new THREE.MeshPhysicalMaterial({
+  color:0xffffff,roughness:.17,metalness:0,
+  clearcoat:1,clearcoatRoughness:.1
+ });
+
+ return new THREE.Mesh(geo,material);
+}
+
+function addLighting(scene){
+ scene.add(new THREE.AmbientLight(0xffffff,1.8));
+
+ const key=new THREE.DirectionalLight(0xffffff,3);
+ key.position.set(4,5,6);
+ scene.add(key);
+
+ const blue=new THREE.PointLight(0x50aaff,25,20);
+ blue.position.set(-3,2,4);
+ scene.add(blue);
+
+ const green=new THREE.PointLight(0x55ed91,20,20);
+ green.position.set(3,-2,-4);
+ scene.add(green);
+}
+
+function makeRenderer(canvas){
+ const renderer=new THREE.WebGLRenderer({
+  canvas,antialias:true,alpha:true
+ });
+ renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));
+ renderer.outputColorSpace=THREE.SRGBColorSpace;
+ return renderer;
+}
+
+function resize(renderer,camera,canvas){
+ const width=canvas.clientWidth;
+ const height=canvas.clientHeight;
+ if(!width||!height)return;
+
+ renderer.setSize(width,height,false);
+ camera.aspect=width/height;
+ camera.updateProjectionMatrix();
+}
+
+/* ======================================
+   2. LOADING SCREEN 3D
+====================================== */
+
+const loaderCanvas=document.getElementById("loader3d");
+const loaderScene=new THREE.Scene();
+const loaderCamera=new THREE.PerspectiveCamera(40,1,.1,100);
+loaderCamera.position.z=5;
+
+addLighting(loaderScene);
+
+const loaderTooth=createTooth();
+loaderTooth.scale.set(1.25,1.25,1.25);
+loaderScene.add(loaderTooth);
+
+const loaderRing=new THREE.Mesh(
+ new THREE.TorusGeometry(1.8,.012,12,100),
+ new THREE.MeshBasicMaterial({color:0x9be6b2})
+);
+loaderRing.rotation.x=.9;
+loaderScene.add(loaderRing);
+
+const loaderRenderer=makeRenderer(loaderCanvas);
+
+function resizeLoader(){
+ resize(loaderRenderer,loaderCamera,loaderCanvas);
+}
+resizeLoader();
+window.addEventListener("resize",resizeLoader);
+
+let loaderFrame=0;
+
+function animateLoader(){
+ requestAnimationFrame(animateLoader);
+ loaderFrame+=.012;
+
+ loaderTooth.rotation.y=Math.sin(loaderFrame)*.5;
+ loaderTooth.rotation.x=Math.sin(loaderFrame*.7)*.15;
+ loaderRing.rotation.z+=.003;
+
+ loaderRenderer.render(loaderScene,loaderCamera);
+}
+animateLoader();
+
+/* ======================================
+   3. HERO 3D EXPERIENCE
+====================================== */
+
+const heroCanvas=document.getElementById("hero3d");
+const heroScene=new THREE.Scene();
+
+const heroCamera=new THREE.PerspectiveCamera(36,1,.1,100);
+heroCamera.position.set(0,0,7);
+
+addLighting(heroScene);
+
+const heroTooth=createTooth();
+heroTooth.scale.set(1.75,1.75,1.75);
+heroScene.add(heroTooth);
+
+const heroRing=new THREE.Mesh(
+ new THREE.TorusGeometry(2,.015,12,120),
+ new THREE.MeshBasicMaterial({
+  color:0x9be6b2,transparent:true,opacity:.65
+ })
+);
+heroRing.rotation.x=.8;
+heroRing.rotation.y=.4;
+heroScene.add(heroRing);
+
+const heroRing2=heroRing.clone();
+heroRing2.scale.set(1.25,1.25,1.25);
+heroRing2.rotation.x=1.3;
+heroScene.add(heroRing2);
+
+/* Floating particles */
+
+const particleCount=250;
+const particlePositions=new Float32Array(particleCount*3);
+
+for(let i=0;i<particleCount;i++){
+ particlePositions[i*3]=(Math.random()-.5)*8;
+ particlePositions[i*3+1]=(Math.random()-.5)*8;
+ particlePositions[i*3+2]=(Math.random()-.5)*5;
+}
+
+const particleGeometry=new THREE.BufferGeometry();
+particleGeometry.setAttribute(
+ "position",new THREE.BufferAttribute(particlePositions,3)
+);
+
+const particles=new THREE.Points(
+ particleGeometry,
+ new THREE.PointsMaterial({
+  color:0xa6eac2,size:.025,transparent:true,opacity:.7
+ })
+);
+heroScene.add(particles);
+
+const heroRenderer=makeRenderer(heroCanvas);
+
+function resizeHero(){
+ resize(heroRenderer,heroCamera,heroCanvas);
+}
+resizeHero();
+window.addEventListener("resize",resizeHero);
+
+let heroFrame=0;
+
+function animateHero(){
+ requestAnimationFrame(animateHero);
+
+ heroFrame+=.008;
+
+ heroTooth.rotation.y=Math.sin(heroFrame)*.4;
+ heroTooth.rotation.x=Math.sin(heroFrame*.6)*.12;
+ heroTooth.position.y=Math.sin(heroFrame*1.2)*.12;
+
+ heroRing.rotation.z+=.0015;
+ heroRing2.rotation.z-=.001;
+
+ particles.rotation.y+=.0004;
+
+ heroRenderer.render(heroScene,heroCamera);
+}
+animateHero();
+
+/* ======================================
+   4. DETAILED 3D DENTAL JAW
+====================================== */
+
+const implantCanvas=document.getElementById("implant3d");
+const implantStage=document.getElementById("implantStage");
+
+const implantScene=new THREE.Scene();
+implantScene.background=new THREE.Color(0x071e32);
+
+const implantCamera=new THREE.PerspectiveCamera(36,1,.1,100);
+implantCamera.position.set(0,2.4,10);
+implantCamera.lookAt(0,-.1,0);
+
+addLighting(implantScene);
+
+/* Gum platform */
+
+const gumGeometry=new THREE.SphereGeometry(1,48,32);
+const gumMaterial=new THREE.MeshPhysicalMaterial({
+ color:0xd77e91,roughness:.4,clearcoat:.35
+});
+
+const gum=new THREE.Mesh(gumGeometry,gumMaterial);
+gum.scale.set(4.2,.55,1.15);
+gum.position.set(0,-1.25,0);
+implantScene.add(gum);
+
+/* Bone beneath gum */
+
+const boneMaterial=new THREE.MeshStandardMaterial({
+ color:0xe6c7a5,roughness:.8
+});
+
+const bone=new THREE.Mesh(
+ new THREE.BoxGeometry(7.8,.6,1.5),
+ boneMaterial
+);
+bone.position.set(0,-1.75,-.1);
+implantScene.add(bone);
+
+/* Dental teeth */
+
+const dentalTeeth=[];
+
+for(let i=0;i<8;i++){
+ const tooth=createTooth();
+
+ tooth.scale.set(.47,.49,.65);
+
+ const x=(i-3.5)*.96;
+
+ tooth.position.set(x,-.52,.3);
+ tooth.rotation.z=(i-3.5)*-.025;
+
+ if(i===4){
+  tooth.visible=false;
+ }
+
+ implantScene.add(tooth);
+ dentalTeeth.push(tooth);
+}
+
+/* Implant metal post */
+
+const implantMaterial=new THREE.MeshStandardMaterial({
+ color:0xc3d6e5,metalness:.85,roughness:.2
+});
+
+const implantPost=new THREE.Mesh(
+ new THREE.CylinderGeometry(.15,.2,.72,32),
+ implantMaterial
+);
+implantPost.position.set(.48,-1.12,.3);
+implantPost.visible=false;
+implantScene.add(implantPost);
+
+/* Implant threads */
+
+const threadMaterial=new THREE.MeshStandardMaterial({
+ color:0x91aebf,metalness:.85,roughness:.25
+});
+
+const threads=[];
+
+for(let i=0;i<6;i++){
+ const thread=new THREE.Mesh(
+  new THREE.TorusGeometry(.18,.025,8,30),
+  threadMaterial
+ );
+ thread.rotation.x=Math.PI/2;
+ thread.position.set(.48,-.88-i*.085,.3);
+ thread.visible=false;
+ implantScene.add(thread);
+ threads.push(thread);
+}
+
+/* Tooth that moves into the missing position */
+
+const movingTooth=createTooth();
+movingTooth.scale.set(.51,.51,.65);
+movingTooth.position.set(.48,3.1,.3);
+implantScene.add(movingTooth);
+
+/* Decorative light */
+
+const implantLight=new THREE.PointLight(0x65dbac,35,10);
+implantLight.position.set(0,1,3);
+implantScene.add(implantLight);
+
+const implantRenderer=makeRenderer(implantCanvas);
+
+function resizeImplant(){
+ resize(implantRenderer,implantCamera,implantCanvas);
+}
+resizeImplant();
+window.addEventListener("resize",resizeImplant);
+
+/* ======================================
+   5. SCROLL ANIMATION
+====================================== */
+
+let progress=0;
+let targetProgress=0;
+
+const implantBar=document.getElementById("implantProgress");
+const implantInstruction=document.getElementById("implantInstruction");
+
+function getScrollProgress(){
+ const rect=implantStage.getBoundingClientRect();
+ const screen=window.innerHeight;
+
+ const distance=rect.height+screen*.55;
+
+ targetProgress=Math.max(
+  0,
+  Math.min(1,(screen*.7-rect.top)/distance)
+ );
+}
+
+window.addEventListener("scroll",getScrollProgress,{passive:true});
+window.addEventListener("resize",getScrollProgress);
+getScrollProgress();
+
+function updateImplant(){
+ progress+=(targetProgress-progress)*.075;
+
+ /* Tooth moves towards the missing position */
+
+ movingTooth.position.y=3.1-progress*3.55;
+ movingTooth.rotation.y=.45*(1-progress);
+ movingTooth.rotation.z=.15*(1-progress);
+
+ /* Tooth becomes seated */
+
+ const scale=.51-progress*.025;
+ movingTooth.scale.set(scale,scale,.65-progress*.02);
+
+ /* Implant visibility */
+
+ implantPost.visible=progress>.55;
+
+ threads.forEach((thread,i)=>{
+  thread.visible=progress>.65;
+  thread.position.y=-.88-i*.085;
+ });
+
+ /* Progress bar */
+
+ implantBar.style.width=(progress*100)+"%";
+
+ if(progress<.3){
+  implantInstruction.textContent="SCROLL DOWN TO WATCH THE TOOTH MOVE";
+ }else if(progress<.7){
+  implantInstruction.textContent="THE TOOTH IS APPROACHING THE MISSING SPACE";
+ }else{
+  implantInstruction.textContent="ILLUSTRATIVE TOOTH PLACEMENT COMPLETE";
+ }
+}
+
+/* ======================================
+   6. ANIMATION LOOPS
+====================================== */
+
+function animateImplant(){
+ requestAnimationFrame(animateImplant);
+ updateImplant();
+ implantRenderer.render(implantScene,implantCamera);
+}
+animateImplant();
+
+/* ======================================
+   7. CLEANUP
+====================================== */
+
+window.addEventListener("pagehide",()=>{
+ loaderRenderer.dispose();
+ heroRenderer.dispose();
+ implantRenderer.dispose();
+});
+</script>
+
+<script>
+/* ======================================
+   8. DOCTOR INFORMATION
+====================================== */
+
+const doctors=[
+ {
+  name:"Dr. Fowzaan Feroz",
+  initials:"FF",
+  speciality:"Prosthodontist · MDS",
+  description:"Specialist in Prosthodontics, as identified on the clinic signage.",
+  extra:"Contact the clinic to enquire about consultation availability and treatment options."
+ },
+ {
+  name:"Dr. Shaimath Asrina",
+  initials:"SA",
+  speciality:"Dental Surgeon",
+  description:"Dental surgeon at Opal Dental Care.",
+  extra:"Contact the clinic to enquire about consultation availability."
+ },
+ {
+  name:"Dr. Shailesh Shenoy",
+  initials:"SS",
+  speciality:"Pedodontist · MDS",
+  description:"Visiting specialist in Pedodontics.",
+  extra:"Contact the clinic to confirm visiting days and appointment availability."
+ },
+ {
+  name:"Dr. Ritesh",
+  initials:"R",
+  speciality:"Oral Surgeon · MDS",
+  description:"Visiting specialist in Oral Surgery.",
+  extra:"Contact the clinic to confirm visiting days and appointment availability."
+ },
+ {
+  name:"Dr. Shravan Shetty",
+  initials:"SS",
+  speciality:"Orthodontist · MDS",
+  description:"Visiting specialist in Orthodontics.",
+  extra:"Contact the clinic to confirm visiting days and appointment availability."
+ },
+ {
+  name:"Dr. Shazia",
+  initials:"S",
+  speciality:"Periodontist · MDS",
+  description:"Visiting specialist in Periodontics.",
+  extra:"Contact the clinic to confirm visiting days and appointment availability."
+ },
+ {
+  name:"Dr. Faseeh",
+  initials:"F",
+  speciality:"Endodontist · MDS",
+  description:"Visiting specialist in Endodontics.",
+  extra:"Contact the clinic to confirm visiting days and appointment availability."
+ }
+];
+
+const doctorGrid=document.getElementById("doctorGrid");
+
+doctors.forEach((doctor,index)=>{
+ const card=document.createElement("article");
+
+ card.className="doctor-card reveal";
+ card.tabIndex=0;
+ card.setAttribute("role","button");
+ card.setAttribute("aria-label","View profile of "+doctor.name);
+
+ card.innerHTML=`
+  <div class="doctor-photo">
+   <div class="doctor-avatar">${doctor.initials}</div>
+  </div>
+  <div class="doctor-info">
+   <h3>${doctor.name}</h3>
+   <p>${doctor.speciality}</p>
+   <span class="doctor-tag">OPAL DENTAL CARE</span>
+   <span class="doctor-click">VIEW DOCTOR PROFILE →</span>
+  </div>
+ `;
+
+ card.addEventListener("click",()=>openDoctor(index));
+ card.addEventListener("keydown",e=>{
+  if(e.key==="Enter"||e.key===" "){
+   e.preventDefault();
+   openDoctor(index);
+  }
+ });
+
+ doctorGrid.appendChild(card);
+});
+
+/* ======================================
+   9. DOCTOR PROFILE MODAL
+====================================== */
+
+const doctorModal=document.getElementById("doctorModal");
+
+function openDoctor(index){
+ const doctor=doctors[index];
+
+ document.getElementById("modalAvatar").textContent=doctor.initials;
+ document.getElementById("modalDoctorName").textContent=doctor.name;
+ document.getElementById("modalDoctorSpeciality").textContent=doctor.speciality;
+ document.getElementById("modalDoctorDescription").textContent=doctor.description;
+ document.getElementById("modalDoctorExtra").textContent=doctor.extra;
+
+ doctorModal.classList.add("open");
+ document.body.classList.add("locked");
+}
+
+function closeModal(id){
+ document.getElementById(id).classList.remove("open");
+ document.body.classList.remove("locked");
+}
+
+document.querySelectorAll("[data-close]").forEach(button=>{
+ button.addEventListener("click",()=>{
+  closeModal(button.dataset.close);
+ });
+});
+
+[doctorModal,document.getElementById("serviceModal")].forEach(modal=>{
+ modal.addEventListener("click",e=>{
+  if(e.target===modal)closeModal(modal.id);
+ });
+});
+
+document.addEventListener("keydown",e=>{
+ if(e.key==="Escape"){
+  document.querySelectorAll(".modal.open").forEach(modal=>{
+   closeModal(modal.id);
+  });
+ }
+});
+
+document.getElementById("modalBook").addEventListener("click",()=>{
+ closeModal("doctorModal");
+});
+
+/* ======================================
+   10. TREATMENT INFORMATION
+====================================== */
+
+const treatments=[
+ {
+  icon:"🦷",name:"Dental Implants",
+  description:"Dental implants are one option for replacing missing teeth. Suitability depends on an examination of your oral health and bone support."
+ },
+ {
+  icon:"😁",name:"Cosmetic Dentistry",
+  description:"Cosmetic dental procedures may improve the appearance of teeth and smiles. Options include bonding and teeth reshaping."
+ },
+ {
+  icon:"✨",name:"Veneers & Crowns",
+  description:"Veneers and crowns are different restorative options used for selected dental concerns. Your dentist can explain which may be appropriate."
+ },
+ {
+  icon:"〰️",name:"Root Canal Treatment",
+  description:"Root canal treatment addresses problems involving the inner tissues of a tooth. Your dentist will assess the tooth and explain the procedure."
+ },
+ {
+  icon:"🪥",name:"Teeth Cleaning",
+  description:"Professional cleaning and routine check-ups help assess oral health and remove deposits that ordinary brushing may not remove."
+ },
+ {
+  icon:"🧒",name:"Paediatric Dentistry",
+  description:"Dental care for children includes examinations, prevention advice and age-appropriate treatment."
+ },
+ {
+  icon:"😁",name:"Braces & Orthodontics",
+  description:"Orthodontic treatment can address selected tooth alignment and bite concerns. Treatment options depend on an individual assessment."
+ },
+ {
+  icon:"🩺",name:"Oral Surgery",
+  description:"Oral surgery covers selected surgical dental procedures. A specialist will assess the condition and explain suitable options."
+ },
+ {
+  icon:"🛡️",name:"Dentures & Bridges",
+  description:"Dentures and bridges are options for replacing missing teeth. A dental examination helps determine suitable options."
+ },
+ {
+  icon:"🩻",name:"Dental X-rays",
+  description:"Dental imaging may help a dentist assess structures that cannot be seen during an ordinary visual examination."
+ },
+ {
+  icon:"🦷",name:"Fillings & Sealants",
+  description:"Fillings restore selected areas of tooth damage. Sealants can help protect vulnerable tooth surfaces."
+ },
+ {
+  icon:"🚑",name:"Emergency Dental Care",
+  description:"Contact the clinic directly for urgent dental concerns and to ask about current emergency availability."
+ }
+];
+
+const serviceGrid=document.getElementById("serviceGrid");
+
+treatments.forEach((treatment,index)=>{
+ const card=document.createElement("article");
+ card.className="service-card reveal";
+ card.tabIndex=0;
+
+ card.innerHTML=`
+  <div class="service-icon">${treatment.icon}</div>
+  <h3>${treatment.name}</h3>
+  <p>${treatment.description.slice(0,105)}...</p>
+  <button type="button">EXPLORE TREATMENT →</button>
+ `;
+
+ card.addEventListener("click",()=>openTreatment(index));
+ card.addEventListener("keydown",e=>{
+  if(e.key==="Enter"){
+   openTreatment(index);
+  }
+ });
+
+ serviceGrid.appendChild(card);
+});
+
+function openTreatment(index){
+ const treatment=treatments[index];
+
+ document.getElementById("modalServiceIcon").textContent=treatment.icon;
+ document.getElementById("modalServiceName").textContent=treatment.name;
+ document.getElementById("modalServiceDescription").textContent=treatment.description;
+
+ document.getElementById("serviceModal").classList.add("open");
+ document.body.classList.add("locked");
+}
+
+document.getElementById("serviceBook").addEventListener("click",()=>{
+ closeModal("serviceModal");
+});
+
+/* ======================================
+   11. WELCOME VOICE EXPERIENCE
+====================================== */
+
+const welcomeText=
+"Hi! Welcome to Opal Dental Care. Your journey towards a healthier, more confident smile starts here. Our team is here to help you. How may we assist you today?";
+
+const welcome=document.getElementById("welcome");
+const speakButton=document.getElementById("speakButton");
+const stopSpeech=document.getElementById("stopSpeech");
+
+let voiceEnabled=true;
+
+function speakWelcome(){
+ if(!("speechSynthesis" in window)){
+  document.getElementById("welcomeMessage").textContent=
+  "Voice playback is not supported in this browser. Please read our welcome message.";
+  return;
+ }
+
+ window.speechSynthesis.cancel();
+
+ const speech=new SpeechSynthesisUtterance(welcomeText);
+ speech.lang="en-IN";
+ speech.rate=.92;
+ speech.pitch=1;
+ speech.volume=1;
+
+ const voices=window.speechSynthesis.getVoices();
+ const indianVoice=voices.find(v=>v.lang==="en-IN");
+
+ if(indianVoice)speech.voice=indianVoice;
+
+ window.speechSynthesis.speak(speech);
+}
+
+speakButton.addEventListener("click",()=>{
+ voiceEnabled=true;
+ speakWelcome();
+});
+
+stopSpeech.addEventListener("click",()=>{
+ voiceEnabled=false;
+ window.speechSynthesis?.cancel();
+});
+
+document.getElementById("voiceToggle").addEventListener("click",()=>{
+ welcome.classList.add("show");
+ speakWelcome();
+});
+
+document.getElementById("welcomeClose").addEventListener("click",()=>{
+ welcome.classList.remove("show");
+ window.speechSynthesis?.cancel();
+});
+
+/* ======================================
+   12. LOADING AND WELCOME SEQUENCE
+====================================== */
+
+const loader=document.getElementById("loader");
+const loaderText=document.getElementById("loaderText");
+
+let pageReady=false;
+
+function finishLoading(){
+ if(pageReady)return;
+ pageReady=true;
+
+ loaderText.textContent="WELCOME TO OPAL DENTAL CARE";
+
+ setTimeout(()=>{
+  loader.classList.add("hide");
+  document.body.classList.remove("locked");
+
+  welcome.classList.add("show");
+
+  /*
+   Browser autoplay policies may prevent speech
+   before the first user interaction. We attempt it
+   here; the welcome button remains available.
+  */
+  if(voiceEnabled){
+   setTimeout(()=>{
+    try{speakWelcome();}catch(error){
+     console.log("Voice requires user interaction.");
     }
-    window.addEventListener('scroll',updateTooth,{passive:true});window.addEventListener('resize',updateTooth);updateTooth();
+   },500);
+  }
 
-    // Appointment enquiry opens WhatsApp with the visitor's form details.
-    document.getElementById('appointment').addEventListener('submit',e=>{
-      e.preventDefault();
-      const data=new FormData(e.currentTarget);
-      const name=data.get('name'),phone=data.get('phone'),service=data.get('service'),date=data.get('date')||'Not specified',message=data.get('message')||'No additional message';
-      const text=`Hello Opal Dental Care, I would like to request an appointment.%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ATreatment: ${encodeURIComponent(service)}%0APreferred date: ${encodeURIComponent(date)}%0AMessage: ${encodeURIComponent(message)}`;
-      window.open(`https://wa.me/917259437999?text=${text}`,'_blank','noopener');
-    });
-  </script>
+ },700);
+}
+
+window.addEventListener("load",()=>{
+ setTimeout(finishLoading,1800);
+});
+
+setTimeout(finishLoading,6000);
+
+/* ======================================
+   13. MOBILE NAVIGATION
+====================================== */
+
+const menuButton=document.getElementById("menuButton");
+const navLinks=document.getElementById("navLinks");
+
+menuButton.addEventListener("click",()=>{
+ const open=navLinks.classList.toggle("open");
+ menuButton.textContent=open?"✕":"☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navLinks.classList.remove("open");
+  menuButton.textContent="☰";
+ });
+});
+
+/* ======================================
+   14. FAQ ACCORDION
+====================================== */
+
+document.querySelectorAll(".faq-question").forEach(question=>{
+ question.addEventListener("click",()=>{
+  const item=question.parentElement;
+  item.classList.toggle("active");
+ });
+});
+
+/* ======================================
+   15. APPOINTMENT FORM
+====================================== */
+
+document.getElementById("appointment").addEventListener("submit",event=>{
+ event.preventDefault();
+
+ const form=new FormData(event.currentTarget);
+
+ const name=form.get("name").trim();
+ const phone=form.get("phone").trim();
+ const treatment=form.get("treatment");
+ const date=form.get("date")||"Not specified";
+ const message=form.get("message")||"No additional message";
+
+ if(!name||!phone){
+  alert("Please enter your name and phone number.");
+  return;
+ }
+
+ const text=[
+  "Hello Opal Dental Care!",
+  "",
+  "I would like to request an appointment.",
+  "Name: "+name,
+  "Phone: "+phone,
+  "Treatment: "+treatment,
+  "Preferred date: "+date,
+  "Message: "+message
+ ].join("\n");
+
+ const whatsappURL=
+ "https://wa.me/917259437999?text="+encodeURIComponent(text);
+
+ window.open(whatsappURL,"_blank","noopener");
+});
+
+/* ======================================
+   16. WHATSAPP LINKS
+====================================== */
+
+document.querySelectorAll('a[href*="wa.me"]').forEach(link=>{
+ link.addEventListener("click",()=>{
+  console.log("Opening Opal Dental Care WhatsApp.");
+ });
+});
+
+/* ======================================
+   17. COPYRIGHT YEAR
+====================================== */
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+/* ======================================
+   18. SCROLL REVEAL
+====================================== */
+
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  if(entry.isIntersecting){
+   entry.target.classList.add("visible");
+   observer.unobserve(entry.target);
+  }
+ });
+},{threshold:.12});
+
+function observeReveal(){
+ document.querySelectorAll(".reveal:not(.visible)").forEach(element=>{
+  observer.observe(element);
+ });
+}
+observeReveal();
+
+const dynamicObserver=new MutationObserver(observeReveal);
+dynamicObserver.observe(document.getElementById("serviceGrid"),{
+ childList:true
+});
+dynamicObserver.observe(document.getElementById("doctorGrid"),{
+ childList:true
+});
+
+/* ======================================
+   19. DATE VALIDATION
+====================================== */
+
+const dateInput=document.getElementById("preferredDate");
+const today=new Date();
+const localDate=new Date(
+ today.getTime()-today.getTimezoneOffset()*60000
+).toISOString().split("T")[0];
+
+dateInput.min=localDate;
+
+/* ======================================
+   20. ACCESSIBILITY
+====================================== */
+
+document.querySelectorAll("a[href^='#']").forEach(link=>{
+ link.addEventListener("click",()=>{
+  const target=document.querySelector(link.getAttribute("href"));
+  if(target&&link.closest(".modal")){
+   closeModal(link.closest(".modal").id);
+  }
+ });
+});
+
+</script>
+
 </body>
 </html>
